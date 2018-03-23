@@ -1,0 +1,19 @@
+/* creating variables*/
+:root{
+    --red: red;
+    --black: black;
+    --pad: 5px;
+    --big: 10px;
+}
+
+.btn{
+    color: blue;
+}
+
+.nicebutton{
+    background-color: coral;
+    color: white;
+    font-size: 18px;
+    padding: 12px 35px;
+
+}
