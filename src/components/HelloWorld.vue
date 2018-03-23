@@ -25,8 +25,9 @@ export default {
 </script>
 
 <style lang="postcss" module>
-@import "../Css/something.css";
+@import "../Css/something.css"; /*module can reach import classes*/
 
+/*--red is a variable declared and located in Css/something.css*/
 .red {
   color: var(--red);
 }
@@ -39,7 +40,10 @@ export default {
   color:darkslateblue;
   padding: var(--big);
 }
-/*Composes must be below the target class - compose is used by module*/
+/*
+Composes can fetch from other classes or from other files
+Composes must be below the target class - compose is used by module
+*/
 .bold {
   composes: red;
   font-weight: bold;
